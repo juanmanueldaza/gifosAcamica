@@ -1,0 +1,122 @@
+.trending-gifos-block {
+    background-color: $secondary-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 46px 0 82px 0;
+    body.dark & {
+        background-color: $secondary-dark-background-color;
+    }
+    & .trending-gifos-title {
+        font-family: $montserrat-font;
+        font-weight: $bold;
+        color: $primary-color;
+        font-size: $h2-subtitle-mobile-size;
+        margin-bottom: 7px;
+        body.dark & {
+            color: $primary-dark-color;
+        }
+    }
+    & .trending-gifos-description {
+        font-family: $roboto-font;
+        font-weight: $regular;
+        color: $secondary-color;
+        font-size: $description-text-mobile-size;
+        width: 165px;
+        margin-bottom: 32px;
+        body.dark & {
+            color: $primary-dark-color;
+        }
+    }
+    .trending-gifos-container {
+
+        #trending-gifos-sub-container {
+            display: flex;
+           
+            & .trending-gifos-displayer-container {
+                height: 187px;           
+                & img {
+                    width: 243px;
+                    height: 187px;
+                    margin-left: 22px;
+                }
+                & .gif-overlay {
+                    display: none;
+                }
+                
+            }
+            & .trending-gifos-displayer-container:hover {
+                height: 187px;
+                & .gif-overlay {
+                    position: relative;
+                    top: -192px;
+                    left: 22px;
+                    width:243px;
+                    height: 187px;
+                    background-color: rgba(87, 46, 229, 0.7);
+                    display: flex;
+                    flex-direction: column;
+                    & .gif-buttons-container {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 10px;
+                        & .gif-button {
+                            cursor: pointer;
+                            width: 32px;
+                            height: 32px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgba(255, 255, 255, 0.7);
+                            border-radius: 20%;
+                            margin-right: 10px;
+                            
+                            & i {
+                                font-size: 16.7px;
+                                color: rgba(87, 46, 229, 0.7);
+                            }
+                            
+                        }
+                        & .gif-button:hover {
+                            height: 32px !important;
+                            background-color: rgba(255, 255, 255, 0.8);
+                        }
+                    }
+                    & .gif-title-container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-start;
+                        flex: 1;
+                        margin-left:13px;
+                        margin-bottom: 15px;
+    
+    
+                        & .gif-user {
+                            font-family: $roboto-font;
+                            font-weight: $regular;
+                            font-size: 15px;
+                            color: #fff;
+                        }
+                        & .gif-title {
+                            font-family: $roboto-font;
+                            font-weight: $bold;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                    }
+    
+                }
+            }  
+
+        }
+        
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        
+    }
+}

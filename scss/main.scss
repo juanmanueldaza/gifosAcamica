@@ -1,0 +1,112 @@
+@import 'partials/config';
+@import 'partials/resets';
+@import 'partials/components/header';
+@import 'partials/components/footer';
+@import 'partials/components/search-section';
+@import 'partials/components/trending-gifos-section';
+@import 'partials/components/favoritos-section';
+@import 'partials/components/misgifos_section';
+@import 'partials/components/crear_gifo';
+@import 'partials/responsive';
+@import 'partials/components/gif_container';
+
+.hider {
+    display: none !important;
+}
+.create-display {
+    height: 100vh !important;
+}
+.expanded-gifo-section {
+    .back-button {
+        display: none;
+    }
+    .forward-button {
+        display: none;
+    }
+    z-index: 9999; 
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    & .expanded-gifo-container {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 59px;
+        & .cross-container {
+            width: 318px;
+            margin-bottom: 73px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 20px;
+            padding-right: 1%;
+            color: #572EE5;
+        }
+        & .gif-container {
+            width: fit-content;
+            height: 245px;
+            
+            .the-gif {
+                width: 318px;
+                height: 245px;
+            }
+        }
+        & .gif-options-container {
+            margin-top: 14px;
+            position: unset;
+            flex-direction: row;
+            height: 80px;
+            width: 318px;
+            background: none;
+            display: flex;
+            & .gif-expand-info {
+                flex: 2;
+                
+                & .gif-user {
+                    font-family: $roboto-font;
+                    font-weight: $regular;
+                    font-size: 15px;
+                    color: #000000;
+                    display: block;
+                }
+                & .gif-title {
+                    margin-top: 6px;
+                    font-family: $montserrat-font;
+                    font-weight: $bold;
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+            & .gif-expand-buttons {
+                flex: 1;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0;
+                & .expand-gifos {
+                    display: none;
+                }
+            }
+            
+        } 
+    } 
+}
+body {
+    background-color: $primary-background-color;
+    
+    border-bottom: 5px solid $primary-color;
+    &.dark {
+        background-color: $primary-dark-background-color;
+        border-top: 5px solid $secondary-color;
+        border-bottom: 5px solid $secondary-color;
+    }
+}
+
+
+
+

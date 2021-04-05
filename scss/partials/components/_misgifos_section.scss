@@ -1,0 +1,77 @@
+.mis-gifos-block {
+    & .empty-favoritos-container {
+        margin-top: 80px;
+        margin-bottom: 137px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & img {
+            margin-bottom: 23.7px;
+        }
+        & .empty-favoritos-description {
+            font-family: $montserrat-font;
+            font-weight: $bold;
+            font-size: 22px;
+            color: #50E3C2;
+            text-align: center;
+            line-height: 33px;
+            width: 40%;
+        }
+    }
+    & .mis-gifos-title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 46px;
+        & img {
+            margin-top: 5px;
+            margin-bottom: 7px;
+        }
+        & .mis-gifos-title {
+            font-family: $montserrat-font;
+            font-weight: bold;
+            font-size: $h2-subtitle-mobile-size;
+            color: $primary-color;
+            body.dark & {
+                color: $primary-dark-color;
+            }
+        }
+    }
+    & .mis-gifos-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap: 20px;
+        margin: 0 21px 0 21px;
+        
+    }
+    & .see-more-mis-gifos-container {
+        margin: 53px 0 78px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & button {
+            border: 1px solid #572EE5;
+            border-radius: 25px;
+            width: 127px;
+            height: 50px;
+            background: none;
+            color: $primary-color;
+            font-family: $montserrat-font;
+            font-weight: $bold;
+            font-size: 13px;
+            letter-spacing: 0;
+            text-align: center;
+            body.dark & {
+                color: $primary-dark-color;
+                border: 1px solid $primary-dark-color;
+            }
+        }
+        & button:hover {
+            background: #572EE5;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

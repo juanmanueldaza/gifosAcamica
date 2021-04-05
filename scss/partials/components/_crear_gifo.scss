@@ -1,0 +1,318 @@
+.firstColorChange {
+    background: #9CAFC3 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.secondColorChange {
+    background:#572EE5 !important;
+    color: #fff !important;
+}
+
+.opacitor {
+    opacity: 1 !important;
+}
+
+.opacitoff {
+    opacity: 0 !important;
+}
+.uploadingGifo__container {
+    opacity: 0.6;
+    background: #572EE5;
+    height: 100%;
+    width: 100%;
+    & .uploadedGifo__buttons {
+        margin-top: 11px;
+        display: flex;
+        justify-content: flex-end;
+        & .buttons-gif {
+            width: 32px;
+            height: 32px;
+            opacity: 0.7;
+            background: #FFFFFF;
+            border-radius: 6px;
+            margin-right: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: #572EE5;
+
+            }
+        }
+        & .buttons-gif:hover {
+            cursor: pointer !important;
+
+        }
+    }
+    & .uploadingGifo__icon {
+        margin-top: 84px;
+        & .iconUP {
+            height: 22px;
+            width: 22px;
+            color:#50E3C2; 
+        }
+        
+        
+    }
+
+    & .uploadingGifo__text {
+        margin-top: 14px;
+        & p {
+            font-family: $montserrat-font;
+            font-weight: 900;
+            font-size: 15px;
+            color: #FFFFFF;
+            text-align: center;
+            opacity: 1;
+        }
+    }
+    & .uploadedGifo__icon {
+        height: 22px;
+        width: 22px;
+    }
+
+    & .uploadedGifo__text {
+        font-family: $montserrat-font;
+        font-weight: $bold;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+
+
+.crear-gifo-block {
+    display: flex;
+    margin-top: 4px;
+    
+    & .projector-icon-block {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        & img {
+            //margin-top: 118px;
+            //margin-left: 120px;
+            position: relative;
+            left: 70px;
+            bottom: 70px;
+        }
+    }
+    & .create-gif-block {
+        width: 795.9px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        & .create-gif-container {
+            border: 1px solid $primary-color;
+            display: flex;
+            flex-direction: column;
+            padding: 24px 20px 24px 20px;
+            width: 688px !important;
+            height: 390px;
+            justify-content: space-between;
+            body.dark & {
+                border-color: #fff !important;
+                background-color: #fff;
+            }
+            & .upper-frames {
+                display: flex;
+                justify-content: space-between;
+                & .upper-left-frame {
+                    border-top: 1px solid $accent-color;
+                    border-left: 1px solid $accent-color;
+                    width: 27px;
+                    height: 25px;
+                }
+                & .upper-right-frame {
+                    border-top: 1px solid $accent-color;
+                    border-right: 1px solid $accent-color;
+                    width: 27px;
+                    height: 25px;
+                }
+            }
+            & .create-gif-screen {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex: 1;
+                
+               
+                & .create-gif-video { 
+                    width: 480px;
+                }
+                & .screen-overlay {
+                    width:480px;
+                    height: 271.75px;
+                    position: absolute;   
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    & .create-gif-title {
+                        width: 550px;
+                        font-family: $montserrat-font;
+                        font-weight: bold;
+                        font-size: $h2-subtitle-desktop-size;
+                        color: $primary-color;
+                        text-align: center;
+                        line-height: 35px;
+                        margin-bottom: 3px;
+                    }
+                    & .create-gif-description {
+                        width: 550px;
+                        font-family: $roboto-font;
+                        font-weight: $regular;
+                        color: $secondary-color;
+                        font-size: $description-text-mobile-size;
+                        text-align: center;
+                        line-height: 29px;
+                    }
+                    & .create-gif-advice {
+                        width: 550px;
+                        font-family: $roboto-font;
+                        font-weight: $regular;
+                        color: $secondary-color;
+                        font-size: $description-text-mobile-size;
+                        text-align: center;
+                        line-height: 29px;
+                    }
+                }
+
+            
+                
+            }
+            & .bottom-frames {
+                display: flex;
+                justify-content: space-between;
+                & .bottom-left-frame {
+                    border-bottom: 1px solid $accent-color;
+                    border-left: 1px solid $accent-color;
+                    width: 27px;
+                    height: 25px;
+                }
+                & .bottom-right-frame {
+                    border-bottom: 1px solid $accent-color;
+                    border-right: 1px solid $accent-color;
+                    width: 27px;
+                    height: 25px;
+                }
+            }
+        }
+        & .create-gif-button-container {
+
+            align-items: center;
+            & .sequenceAndTimer {
+                display: flex;
+                & .sequence-buttons {
+                    flex: 310;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 24px;
+                    margin-bottom: 19px;
+                    
+                    & button {
+                        border: 1px solid #572EE5;
+                        font-family: $roboto-font;
+                        font-weight: $medium;
+                        font-size: 18px;
+                        color: #572EE5;
+                        text-align: center;
+                        background: none;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 100%;
+                        body.dark & {
+                            border-color:#fff;
+                            color: #fff;
+                        }
+                    }
+                    & .middle {
+                        margin: 0 25px 0 25px;
+                    }
+                }
+                & .timer {
+                    flex: 212;
+                    opacity: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    
+                    & p {
+                        font-family: $montserrat-font;
+                        font-weight: $bold;
+                        font-size: 15px;
+                        color: #572EE5;
+                        letter-spacing: 0;
+                        text-align: center;
+                        line-height: 22px;
+                        margin-right: 55px;
+                        
+                    }
+                    & div {
+                        margin-right: 55px;
+                        font-family: $montserrat-font;
+                        font-weight: $bold;
+                        font-size: 13px;
+                        color: #572EE5;
+                        letter-spacing: 0;
+                        text-align: center;
+                        border-bottom: 2px solid #5ED7C6;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+            & .separador-buttons {
+                height: 6.9px;
+                width: 795.9px;
+                background-color: $primary-color;
+                margin-bottom: 20.1px;
+                body.dark & {
+                    background-color:#fff;
+                    color: #fff;
+                }
+            }
+            & .comenzar-button {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 26px;
+                & button {
+                    font-family: $montserrat-font;
+                    font-weight: $bold;
+                    font-size: 13px;
+                    color: #572EE5;
+                    letter-spacing: 0;
+                    text-align: center;
+                    background: none;
+                    width: 127px;
+                    height:50px;
+                    border: 1px solid #572EE5;
+                    border-radius: 25px;
+                    border-radius: 25px;
+                    body.dark & {
+                        border-color:#fff;
+                        color: #fff;
+                    }
+                }
+                & button:hover {
+                    background-color: #572EE5;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }  
+    }
+    & .film-icon-block {
+        flex: 1;
+        & img {
+            background: none;
+            margin-top: 382px;
+            margin-left: 5px;
+            
+        }
+    }
+}

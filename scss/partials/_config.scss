@@ -1,0 +1,56 @@
+// Fonts Import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+// Fonts
+$roboto-font: 'Roboto', sans-serif;
+$montserrat-font: 'Montserrat', sans-serif;
+
+// Font Weights
+$black: 900;
+$bold: 700;
+$medium: 500;
+$regular: 400;
+
+// Font Sizes
+$h1-title-mobile-size: 25px;
+$h2-subtitle-mobile-size: 20px;
+$h3-sub-subtitle-mobile-size: 16px;
+$trending-tags-mobile-size: 14px;
+$footer-title-mobile-size: 15px;
+$footer-copyright-mobile-size: 14px;
+$description-text-mobile-size: 16px;
+
+$h1-title-desktop-size: 35px;
+$h2-subtitle-desktop-size: 25px;
+$h3-sub-subtitle-desktop-size: 18px;
+$trending-tags-desktop-size: 16px;
+$footer-title-desktop-size: 13px;
+$footer-copyright-desktop-size: 13px;
+$description-text-desktop-size: 18px;
+
+
+// Colors
+$primary-color: #572EE5;
+$secondary-color: #000000;
+$accent-color: #50E3C2;
+$active-color: #9CAFC3;
+
+// Background Colors: 
+$primary-background-color: #fff;
+$secondary-background-color: #F3F5F8;
+
+// Dark Mode:
+// Colors:
+$primary-dark-color: #fff;
+$secondary-dark-color: #fff;
+
+// Background Colors: 
+$primary-dark-background-color: #37383C;
+$secondary-dark-background-color: #222326;
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
